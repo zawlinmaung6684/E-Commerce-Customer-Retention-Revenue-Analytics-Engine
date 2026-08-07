@@ -22,6 +22,8 @@ Leveraged the Python `Faker` library to synthesize a fully relational mock e-com
 2. **Order Transactions**: Simulated realistic purchasing variability (random item counts, pricing, weighted discount probabilities). Ensures logical consistency (orders happen *after* account creation). 
 3. **Web Event Logs**: Generated clickstream and behavioral event logs to simulate user interactions across the conversion funnel (page views $\rightarrow$ add-to-cart $\rightarrow$ checkout $\rightarrow$ payment $\rightarrow$ purchase).
 
+![ERD Diagram](Schema%20Design/erd_diagram.png)
+
 ### Phase 1: Data Sanity Check & EDA (SQL)
 Before deep-dive analytics, the raw data underwent rigorous auditing:
 - **Primary Key Integrity**: Verified record counts and `user_id`, `order_id`, and `event_id` uniqueness.
